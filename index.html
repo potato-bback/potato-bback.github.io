@@ -16,9 +16,28 @@
     <nav>
         <a href="index.html" class="logo">POTATO BBACK'S STUDIO</a>
         <div class="nav-links">
-            <a href="index.html" class="active">소개</a>
-            <a href="products.html">제품</a>
-            <a href="contact.html">문의</a>
+            <a href="index.html" class="active" data-i18n="nav_intro">소개</a>
+            <a href="products.html" data-i18n="nav_products">제품</a>
+            <a href="contact.html" data-i18n="nav_contact">문의</a>
+            <div class="lang-selector">
+                <button class="lang-btn" id="langBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                        </path>
+                    </svg>
+                </button>
+                <div class="lang-dropdown glass" id="langDropdown">
+                    <button data-lang="ko">한국어 (KO)</button>
+                    <button data-lang="en">English (EN)</button>
+                    <button data-lang="es">Español (ES)</button>
+                    <button data-lang="zh">中文 (ZH)</button>
+                    <button data-lang="ja">日本語 (JA)</button>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -29,28 +48,31 @@
                     height='100%'></iframe>
             </div>
             <div class="hero-content">
-                <h1>Create Beyond<br>Limits.</h1>
-                <p>우리는 웹, 앱, 게임을 통해 일상의 한계를 넘어서는 새로운 가치를 창출합니다.</p>
+                <h1 data-i18n="hero_title">Create Beyond<br>Limits.</h1>
+                <p data-i18n="hero_desc">우리는 웹, 앱, 게임을 통해 일상의 한계를 넘어서는 새로운 가치를 창출합니다.</p>
                 <div class="cta-btns">
-                    <a href="products.html" class="btn btn-primary">제품 보기</a>
+                    <a href="products.html" class="btn btn-primary" data-i18n="hero_btn">제품 보기</a>
                 </div>
             </div>
         </section>
 
         <section id="intro">
-            <h2 class="section-title">What We Do</h2>
+            <h2 class="section-title" data-i18n="intro_title">What We Do</h2>
             <div class="grid">
                 <div class="glass" style="padding: 2.5rem;">
-                    <h3>Web Development</h3>
-                    <p style="color: var(--text-secondary); margin-top: 1rem;">고성능 웹 애플리케이션과 세련된 UI/UX 디자인을 제공합니다.</p>
+                    <h3 data-i18n="web_title">Web Development</h3>
+                    <p style="color: var(--text-secondary); margin-top: 1rem;" data-i18n="web_desc">고성능 웹 애플리케이션과 세련된
+                        UI/UX 디자인을 제공합니다.</p>
                 </div>
                 <div class="glass" style="padding: 2.5rem;">
-                    <h3>App Solution</h3>
-                    <p style="color: var(--text-secondary); margin-top: 1rem;">모바일 환경에서 최고의 사용자 경험을 선사하는 앱을 개발합니다.</p>
+                    <h3 data-i18n="app_title">App Solution</h3>
+                    <p style="color: var(--text-secondary); margin-top: 1rem;" data-i18n="app_desc">모바일 환경에서 최고의 사용자 경험을
+                        선사하는 앱을 개발합니다.</p>
                 </div>
                 <div class="glass" style="padding: 2.5rem;">
-                    <h3>Game Content</h3>
-                    <p style="color: var(--text-secondary); margin-top: 1rem;">몰입감 넘치는 인터랙티브 게임 컨텐츠를 기획하고 제작합니다.</p>
+                    <h3 data-i18n="game_title">Game Content</h3>
+                    <p style="color: var(--text-secondary); margin-top: 1rem;" data-i18n="game_desc">몰입감 넘치는 인터랙티브 게임
+                        컨텐츠를 기획하고 제작합니다.</p>
                 </div>
             </div>
         </section>

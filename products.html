@@ -15,15 +15,34 @@
     <nav>
         <a href="index.html" class="logo">POTATO BBACK'S STUDIO</a>
         <div class="nav-links">
-            <a href="index.html">소개</a>
-            <a href="products.html" class="active">제품</a>
-            <a href="contact.html">문의</a>
+            <a href="index.html" data-i18n="nav_intro">소개</a>
+            <a href="products.html" class="active" data-i18n="nav_products">제품</a>
+            <a href="contact.html" data-i18n="nav_contact">문의</a>
+            <div class="lang-selector">
+                <button class="lang-btn" id="langBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                        </path>
+                    </svg>
+                </button>
+                <div class="lang-dropdown glass" id="langDropdown">
+                    <button data-lang="ko">한국어 (KO)</button>
+                    <button data-lang="en">English (EN)</button>
+                    <button data-lang="es">Español (ES)</button>
+                    <button data-lang="zh">中文 (ZH)</button>
+                    <button data-lang="ja">日本語 (JA)</button>
+                </div>
+            </div>
         </div>
     </nav>
 
     <main>
         <section>
-            <h2 class="section-title">Product Showcase</h2>
+            <h2 class="section-title" data-i18n="product_header">Product Showcase</h2>
             <div class="grid">
                 <!-- Web Project -->
                 <div class="glass" style="padding: 2rem; overflow: hidden;">
@@ -31,9 +50,11 @@
                         style="height: 180px; background: linear-gradient(45deg, #001f3f, #0074d9); border-radius: 12px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; font-weight: bold; color: rgba(255,255,255,0.2);">
                         WEB PROJECT</div>
                     <span
-                        style="font-size: 0.8rem; color: var(--accent-blue); font-weight: 600; text-transform: uppercase;">WEB</span>
-                    <h3 style="margin: 0.5rem 0;">Premium Web App</h3>
-                    <p style="color: var(--text-secondary); font-size: 0.9rem;">반응형 디자인과 고성능 비즈니스 로직이 결합된 웹 앱입니다.</p>
+                        style="font-size: 0.8rem; color: var(--accent-blue); font-weight: 600; text-transform: uppercase;"
+                        data-i18n="prod_web_label">WEB</span>
+                    <h3 style="margin: 0.5rem 0;" data-i18n="prod_web_title">Premium Web App</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;" data-i18n="prod_web_desc">반응형 디자인과 고성능
+                        비즈니스 로직이 결합된 웹 앱입니다.</p>
                 </div>
 
                 <!-- App Project -->
@@ -42,9 +63,11 @@
                         style="height: 180px; background: linear-gradient(45deg, #111, #333); border-radius: 12px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; font-weight: bold; color: rgba(255,255,255,0.2);">
                         MOBILE APP</div>
                     <span
-                        style="font-size: 0.8rem; color: var(--accent-purple); font-weight: 600; text-transform: uppercase;">APP</span>
-                    <h3 style="margin: 0.5rem 0;">Efficiency Tool</h3>
-                    <p style="color: var(--text-secondary); font-size: 0.9rem;">사용자의 생산성을 극대화하는 직관적인 인터페이스의 앱입니다.</p>
+                        style="font-size: 0.8rem; color: var(--accent-purple); font-weight: 600; text-transform: uppercase;"
+                        data-i18n="prod_app_label">APP</span>
+                    <h3 style="margin: 0.5rem 0;" data-i18n="prod_app_title">Efficiency Tool</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;" data-i18n="prod_app_desc">사용자의 생산성을
+                        극대화하는 직관적인 인터페이스의 앱입니다.</p>
                 </div>
 
                 <!-- Game Project -->
@@ -52,10 +75,11 @@
                     <div
                         style="height: 180px; background: linear-gradient(45deg, #3d1052, #1d0922); border-radius: 12px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; font-weight: bold; color: rgba(255,255,255,0.2);">
                         GAME</div>
-                    <span
-                        style="font-size: 0.8rem; color: #ff007a; font-weight: 600; text-transform: uppercase;">GAME</span>
-                    <h3 style="margin: 0.5rem 0;">Neo Runner</h3>
-                    <p style="color: var(--text-secondary); font-size: 0.9rem;">화려한 이펙트와 긴장감 넘치는 사이버펑크 스타일의 게임입니다.</p>
+                    <span style="font-size: 0.8rem; color: #ff007a; font-weight: 600; text-transform: uppercase;"
+                        data-i18n="prod_game_label">GAME</span>
+                    <h3 style="margin: 0.5rem 0;" data-i18n="prod_game_title">Neo Runner</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;" data-i18n="prod_game_desc">화려한 이펙트와 긴장감
+                        넘치는 사이버펑크 스타일의 게임입니다.</p>
                 </div>
             </div>
         </section>

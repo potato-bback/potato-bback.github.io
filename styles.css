@@ -76,6 +76,69 @@ nav {
     color: var(--text-primary);
 }
 
+/* Language Selector */
+.lang-selector {
+    position: relative;
+    margin-left: 1.5rem;
+}
+
+.lang-btn {
+    background: none;
+    border: 1px solid var(--glass-border);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--text-secondary);
+    transition: var(--transition);
+}
+
+.lang-btn:hover {
+    color: var(--text-primary);
+    border-color: var(--accent-blue);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    min-width: 120px;
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 1001;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.lang-dropdown.show {
+    display: flex;
+}
+
+.lang-dropdown button {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    padding: 0.8rem 1.2rem;
+    text-align: left;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 0.9rem;
+}
+
+.lang-dropdown button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
+}
+
+.lang-dropdown button.active {
+    color: var(--accent-blue);
+    font-weight: 600;
+}
+
 /* Hero & Spline Sections */
 .hero,
 .spline-hero-section {
