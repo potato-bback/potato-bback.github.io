@@ -140,14 +140,10 @@ nav {
 }
 
 /* Hero & Spline Sections */
-.hero,
-.spline-hero-section {
-    height: 100vh;
+.hero {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     background: radial-gradient(circle at 50% 50%, rgba(0, 210, 255, 0.05) 0%, transparent 50%);
     position: relative;
     overflow: hidden;
@@ -156,7 +152,21 @@ nav {
 
 .spline-hero-section {
     height: 70vh;
-    /* Increased slightly for better visibility */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.hero .spline-container {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    z-index: 1;
 }
 
 .spline-container {
@@ -182,11 +192,13 @@ nav {
 .hero-content {
     position: relative;
     z-index: 2;
-    pointer-events: none;
-    /* Allow clicking through to the model if needed */
-    padding: 0 10%;
+    padding: 4rem 10% 8rem;
     width: 100%;
     max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    pointer-events: none;
+    /* Allows clicking through to the model below */
 }
 
 .hero-content * {
