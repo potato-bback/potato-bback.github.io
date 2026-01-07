@@ -148,15 +148,15 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 10%;
     background: radial-gradient(circle at 50% 50%, rgba(0, 210, 255, 0.05) 0%, transparent 50%);
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 .spline-hero-section {
-    height: 60vh;
-    /* Shorter than main hero for subpages */
+    height: 70vh;
+    /* Increased slightly for better visibility */
 }
 
 .spline-container {
@@ -165,16 +165,33 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
-    pointer-events: none;
-    /* Allows clicking through to buttons if needed, or set to all for interaction */
+    z-index: 0;
+    /* Background layer */
+    pointer-events: all;
+    /* Allow interaction with the 3D model */
 }
 
-/* Ensure hero content stays above spline */
+.spline-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+/* Ensure hero content stays above spline and has proper padding */
 .hero-content {
     position: relative;
     z-index: 2;
+    pointer-events: none;
+    /* Allow clicking through to the model if needed */
+    padding: 0 10%;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.hero-content * {
     pointer-events: all;
+    /* Content itself should be clickable */
 }
 
 .hero h1 {
