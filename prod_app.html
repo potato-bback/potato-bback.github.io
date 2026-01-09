@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products | potato bback's studio</title>
+    <title>App Project | potato bback's studio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@
         <div class="nav-links" id="navLinks">
             <a href="index.html#hero" data-i18n="nav_home">홈</a>
             <a href="index.html#intro" data-i18n="nav_intro">소개</a>
-            <a href="products.html" class="active" data-i18n="nav_products">제품</a>
+            <a href="products.html" data-i18n="nav_products">제품</a>
             <a href="contact.html" data-i18n="nav_contact">문의</a>
             <div class="lang-selector">
                 <button class="lang-btn" id="langBtn">
@@ -47,37 +47,14 @@
     </nav>
 
     <main>
-        <section>
-            <h2 class="section-title" data-i18n="product_header">Product Showcase</h2>
-            <div class="grid">
-                <!-- Web Project -->
-                <a href="prod_web.html" class="glass card" style="text-decoration: none;">
-                    <div
-                        style="height: 180px; background: linear-gradient(45deg, #001f3f, #0074d9); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: rgba(255,255,255,0.2);">
-                        WEB PROJECT</div>
-                </a>
-
-                <!-- App Project -->
-                <a href="prod_app.html" class="glass card" style="text-decoration: none;">
-                    <div
-                        style="height: 180px; background: linear-gradient(45deg, #111, #333); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: rgba(255,255,255,0.2);">
-                        MOBILE APP</div>
-                </a>
-
-                <!-- Game Project -->
-                <a href="prod_game.html" class="glass card" style="text-decoration: none;">
-                    <div
-                        style="height: 180px; background: linear-gradient(45deg, #3d1052, #1d0922); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: rgba(255,255,255,0.2);">
-                        GAME</div>
-                </a>
+        <section style="padding-top: 10rem; min-height: 80vh; text-align: center;">
+            <h2 class="section-title" data-i18n="header_prod_app">Efficiency Tool</h2>
+            <div class="glass" style="max-width: 800px; margin: 2rem auto; padding: 3rem; text-align: left;">
+                <p style="color: var(--text-secondary); line-height: 1.8;">준비중인 제품 상세 페이지입니다. 곧 새로운 소식으로 찾아뵙겠습니다.</p>
             </div>
-        </section>
 
-        <section class="archive-section">
-            <div class="archive-container glass">
-                <p style="color: var(--text-secondary); margin-bottom: 2rem;" data-i18n="archive_desc">다른 중요한 문서들이
-                    보관되어있는 보관소입니다.</p>
-                <a href="archive.html" class="btn btn-archive" data-i18n="archive_btn">보관소 보기</a>
+            <div style="margin-top: 5rem;">
+                <a href="products.html" class="btn btn-primary" data-i18n="back_to_products">제품 목록으로 돌아가기</a>
             </div>
         </section>
     </main>

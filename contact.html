@@ -73,18 +73,23 @@
                 <hr style="border: 0; border-top: 1px solid var(--glass-border); margin-bottom: 2rem;">
 
                 <div class="grid" style="grid-template-columns: 1fr; gap: 1rem;">
-                    <a href="mailto:contact@potatobback.io" class="btn btn-primary" style="text-align: center;"
-                        data-i18n="contact_btn_email">이메일로
+                    <a href="javascript:void(0)" onclick="copyEmail()" class="btn btn-primary"
+                        style="text-align: center;" data-i18n="contact_btn_email">이메일로
                         문의하기</a>
-                    <a href="#" class="btn glass"
+                    <a href="https://forms.gle/nF5F5iZc2zYiymqAA" target="_blank" rel="noopener noreferrer"
+                        class="btn glass"
                         style="text-align: center; border-color: var(--accent-blue); color: var(--accent-blue);"
                         data-i18n="contact_btn_form">Google
                         Form 작성하기</a>
                 </div>
             </div>
 
-            <div style="margin-top: 3rem; text-align: center; color: var(--text-secondary);">
-                <p data-i18n="contact_footer_sns">기타 빠른 문의: @potato_studio (SNS)</p>
+            <div
+                style="margin-top: 3rem; text-align: center; color: var(--text-secondary); display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                <span data-i18n="contact_footer_sns_label">기타 빠른 문의: </span>
+                <a href="social_links.html" class="btn glass"
+                    style="border-color: var(--accent-blue); color: var(--accent-blue); padding: 0.5rem 1rem; font-size: 0.9rem;"
+                    data-i18n="contact_footer_sns_btn">@potato_studio (SNS)</a>
             </div>
         </section>
     </main>

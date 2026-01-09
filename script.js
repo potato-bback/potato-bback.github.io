@@ -22,7 +22,8 @@ const translations = {
         contact_guide_3: "영업일 기준 2~3일 내에 회신드리고 있습니다.",
         contact_btn_email: "이메일로 문의하기",
         contact_btn_form: "Google Form 작성하기",
-        contact_footer_sns: "기타 빠른 문의: @potato_studio (SNS)",
+        contact_footer_sns_label: "기타 빠른 문의: ",
+        contact_footer_sns_btn: "@potato_studio (SNS)",
         product_header: "Product Showcase",
         prod_web_label: "WEB",
         prod_web_title: "Premium Web App",
@@ -55,7 +56,14 @@ const translations = {
         header_social: "연관 링크",
         back_to_archive: "보관소로 돌아가기",
         privacy_v1: "개인정보 처리방침 (AI 영양사)",
-        back_to_privacy: "내역 목록으로 돌아가기"
+        back_to_privacy: "내역 목록으로 돌아가기",
+        social_github: "GitHub",
+        social_instagram: "Instagram",
+        social_naverblog: "Naver Blog",
+        header_prod_web: "Premium Web App",
+        header_prod_app: "Efficiency Tool",
+        header_prod_game: "Neo Runner",
+        email_copied: "이메일 주소가 복사되었습니다!"
     },
     en: {
         nav_home: "Home",
@@ -80,7 +88,8 @@ const translations = {
         contact_guide_3: "We usually respond within 2-3 business days.",
         contact_btn_email: "Inquiry via Email",
         contact_btn_form: "Fill out Google Form",
-        contact_footer_sns: "Other quick inquiries: @potato_studio (SNS)",
+        contact_footer_sns_label: "Other quick inquiries: ",
+        contact_footer_sns_btn: "@potato_studio (SNS)",
         product_header: "Product Showcase",
         prod_web_label: "WEB",
         prod_web_title: "Premium Web App",
@@ -113,7 +122,14 @@ const translations = {
         header_social: "Social Links",
         back_to_archive: "Back to Archive",
         privacy_v1: "Privacy Policy (AI Nutritionist)",
-        back_to_privacy: "Back to Policy List"
+        back_to_privacy: "Back to Policy List",
+        social_github: "GitHub",
+        social_instagram: "Instagram",
+        social_naverblog: "Naver Blog",
+        header_prod_web: "Premium Web App",
+        header_prod_app: "Efficiency Tool",
+        header_prod_game: "Neo Runner",
+        email_copied: "Email address copied!"
     },
     es: {
         nav_home: "Inicio",
@@ -138,7 +154,8 @@ const translations = {
         contact_guide_3: "Normalmente respondemos dentro de 2-3 días hábiles.",
         contact_btn_email: "Consulta por correo electrónico",
         contact_btn_form: "Completar formulario de Google",
-        contact_footer_sns: "Otras consultas rápidas: @potato_studio (SNS)",
+        contact_footer_sns_label: "Otras consultas rápidas: ",
+        contact_footer_sns_btn: "@potato_studio (SNS)",
         product_header: "Escaparate de productos",
         prod_web_label: "WEB",
         prod_web_title: "Aplicación web premium",
@@ -161,7 +178,7 @@ const translations = {
         arc_box2_desc: "Obras que han finalizado su servicio o son versiones anteriores a las actualizaciones.",
         arc_box3_label: "Documento",
         arc_box3_title: "Política de privacidad",
-        arc_box3_desc: "Política de tratamiento de la información personal requerida por algunos programas.",
+        arc_box3_desc: "Política de tratamiento de la información personal requerida por some programas.",
         arc_box4_label: "Social",
         arc_box4_title: "Enlaces relacionados",
         arc_box4_desc: "Enlaces a las redes sociales del desarrollador.",
@@ -171,7 +188,14 @@ const translations = {
         header_social: "Enlaces sociales",
         back_to_archive: "Volver al archivo",
         privacy_v1: "Política de privacidad (Nutricionista con IA)",
-        back_to_privacy: "Volver a la lista"
+        back_to_privacy: "Volver a la lista",
+        social_github: "GitHub",
+        social_instagram: "Instagram",
+        social_naverblog: "Naver Blog",
+        header_prod_web: "Premium Web App",
+        header_prod_app: "Efficiency Tool",
+        header_prod_game: "Neo Runner",
+        email_copied: "¡Dirección de correo copiada!"
     },
     zh: {
         nav_home: "首页",
@@ -196,7 +220,8 @@ const translations = {
         contact_guide_3: "我们通常在 2-3 个工作日内回复。",
         contact_btn_email: "通过电子邮件咨询",
         contact_btn_form: "填写 Google 表单",
-        contact_footer_sns: "其他快速咨询：@potato_studio (SNS)",
+        contact_footer_sns_label: "其他快速咨询：",
+        contact_footer_sns_btn: "@potato_studio (SNS)",
         product_header: "产品展示",
         prod_web_label: "网页",
         prod_web_title: "高级网页应用",
@@ -229,7 +254,14 @@ const translations = {
         header_social: "社交链接",
         back_to_archive: "回到存档",
         privacy_v1: "隐私政策 (AI 营养师)",
-        back_to_privacy: "返回列表"
+        back_to_privacy: "返回列表",
+        social_github: "GitHub",
+        social_instagram: "Instagram",
+        social_naverblog: "Naver Blog",
+        header_prod_web: "Premium Web App",
+        header_prod_app: "Efficiency Tool",
+        header_prod_game: "Neo Runner",
+        email_copied: "电子邮箱地址已复制！"
     },
     ja: {
         nav_home: "ホーム",
@@ -250,11 +282,12 @@ const translations = {
         contact_subheader: "ご不明な点はありますか？いつでもお気軽にお問い合わせください。",
         contact_guide_title: "お問い合わせの前にご確認ください",
         contact_guide_1: "お問い合わせの種類（ウェブ、アプリ、ゲームなど）を明確に記載いただくと、迅速な回答が可能です。",
-        contact_guide_2: "企画書や参考サイトのリンクがある場合は、併せてお送りください。",
+        contact_guide_2: "企画書や参考サイト의 リンクがある場合は、併せてお送りください。",
         contact_guide_3: "通常 2〜3 営業日以内に回答いたします。",
         contact_btn_email: "メールでお問い合わせ",
         contact_btn_form: "Google フォームに入力",
-        contact_footer_sns: "その他のお問い合わせ：@potato_studio (SNS)",
+        contact_footer_sns_label: "その他のお問い合わせ：",
+        contact_footer_sns_btn: "@potato_studio (SNS)",
         product_header: "製品ショーケース",
         prod_web_label: "ウェブ",
         prod_web_title: "プレミアムウェブアプリ",
@@ -287,7 +320,14 @@ const translations = {
         header_social: "関連リンク",
         back_to_archive: "アーカイブに戻る",
         privacy_v1: "個人情報処理方針 (AI栄養士)",
-        back_to_privacy: "リストに戻る"
+        back_to_privacy: "リストに戻る",
+        social_github: "GitHub",
+        social_instagram: "Instagram",
+        social_naverblog: "Naver Blog",
+        header_prod_web: "Premium Web App",
+        header_prod_app: "Efficiency Tool",
+        header_prod_game: "Neo Runner",
+        email_copied: "メールアドレスがコピーされました！"
     }
 };
 
@@ -303,7 +343,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const setLanguage = (lang) => {
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
-            if (translations[lang][key]) {
+            if (translations[lang] && translations[lang][key]) {
                 el.innerHTML = translations[lang][key];
             }
         });
@@ -452,3 +492,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// Global copy email function
+function copyEmail() {
+    const email = "potatobback@gmail.com";
+    navigator.clipboard.writeText(email).then(() => {
+        const msg = translations[localStorage.getItem('siteLang') || 'ko']?.email_copied || "Email copied!";
+        alert(msg);
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+    });
+}
