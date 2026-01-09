@@ -14,7 +14,12 @@
 <body>
     <nav>
         <a href="index.html" class="logo">POTATO BBACK'S STUDIO</a>
-        <div class="nav-links">
+        <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
             <a href="index.html#hero" data-i18n="nav_home">홈</a>
             <a href="index.html#intro" data-i18n="nav_intro">소개</a>
             <a href="products.html" class="active" data-i18n="nav_products">제품</a>
@@ -82,6 +87,14 @@
                     <p style="color: var(--text-secondary); font-size: 0.9rem;" data-i18n="prod_game_desc">화려한 이펙트와 긴장감
                         넘치는 사이버펑크 스타일의 게임입니다.</p>
                 </div>
+            </div>
+        </section>
+
+        <section class="archive-section">
+            <div class="archive-container glass">
+                <p style="color: var(--text-secondary); margin-bottom: 2rem;" data-i18n="archive_desc">다른 중요한 문서들이
+                    보관되어있는 보관소입니다.</p>
+                <a href="archive.html" class="btn btn-archive" data-i18n="archive_btn">보관소 보기</a>
             </div>
         </section>
     </main>

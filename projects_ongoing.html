@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ongoing Projects | potato bback's studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo">POTATO BBACK'S STUDIO</a>
+        <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html#hero" data-i18n="nav_home">홈</a>
+            <a href="index.html#intro" data-i18n="nav_intro">소개</a>
+            <a href="products.html" data-i18n="nav_products">제품</a>
+            <a href="contact.html" data-i18n="nav_contact">문의</a>
+            <div class="lang-selector">
+                <button class="lang-btn" id="langBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                        </path>
+                    </svg>
+                </button>
+                <div class="lang-dropdown glass" id="langDropdown">
+                    <button data-lang="ko">한국어 (KO)</button>
+                    <button data-lang="en">English (EN)</button>
+                    <button data-lang="es">Español (ES)</button>
+                    <button data-lang="zh">中文 (ZH)</button>
+                    <button data-lang="ja">日本語 (JA)</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section style="padding-top: 10rem; min-height: 80vh; text-align: center;">
+            <h2 class="section-title" data-i18n="header_ongoing">제작중인 프로젝트</h2>
+            <div class="glass" style="max-width: 800px; margin: 2rem auto; padding: 3rem;">
+                <p style="color: var(--text-secondary);" data-i18n="arc_box1_desc">개발자가 현재 작업 진행중에 있는 프로젝트입니다.</p>
+                <div
+                    style="margin-top: 3rem; padding: 2rem; border: 1px dashed var(--glass-border); border-radius: 12px; color: var(--text-secondary);">
+                    Project content coming soon...
+                </div>
+            </div>
+
+            <div style="margin-top: 5rem;">
+                <a href="archive.html" class="btn btn-primary" data-i18n="back_to_archive">보관소로 돌아가기</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 potato bback's studio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

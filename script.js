@@ -32,7 +32,30 @@ const translations = {
         prod_app_desc: "사용자의 생산성을 극대화하는 직관적인 인터페이스의 앱입니다.",
         prod_game_label: "GAME",
         prod_game_title: "Neo Runner",
-        prod_game_desc: "화려한 이펙트와 긴장감 넘치는 사이버펑크 스타일의 게임입니다."
+        prod_game_desc: "화려한 이펙트와 긴장감 넘치는 사이버펑크 스타일의 게임입니다.",
+        archive_btn: "보관소 보기",
+        archive_header: "Project Archive",
+        archive_desc: "다른 중요한 문서들이 보관되어있는 보관소입니다.",
+        back_to_products: "제품 목록으로 돌아가기",
+        arc_box1_label: "프로젝트",
+        arc_box1_title: "제작중인 프로젝트",
+        arc_box1_desc: "개발자가 현재 작업 진행중에 있는 프로젝트입니다.",
+        arc_box2_label: "프로젝트",
+        arc_box2_title: "구버전 프로젝트",
+        arc_box2_desc: "서비스를 종료했거나, 업데이트되기 전 작품입니다.",
+        arc_box3_label: "문서",
+        arc_box3_title: "개인정보 처리방침",
+        arc_box3_desc: "일부 프로그램에서 요구하는 개인정보에 대한 처리 방침입니다.",
+        arc_box4_label: "소셜",
+        arc_box4_title: "연관 링크",
+        arc_box4_desc: "개발자의 SNS 링크입니다.",
+        header_ongoing: "제작중인 프로젝트",
+        header_legacy: "구버전 프로젝트",
+        header_privacy: "개인정보 처리방침",
+        header_social: "연관 링크",
+        back_to_archive: "보관소로 돌아가기",
+        privacy_v1: "개인정보 처리방침 (AI 영양사)",
+        back_to_privacy: "내역 목록으로 돌아가기"
     },
     en: {
         nav_home: "Home",
@@ -67,7 +90,30 @@ const translations = {
         prod_app_desc: "An app with an intuitive interface to maximize user productivity.",
         prod_game_label: "GAME",
         prod_game_title: "Neo Runner",
-        prod_game_desc: "A cyberpunk-style game with flashy effects and thrilling gameplay."
+        prod_game_desc: "A cyberpunk-style game with flashy effects and thrilling gameplay.",
+        archive_btn: "View Archive",
+        archive_header: "Project Archive",
+        archive_desc: "This is an archive where other important documents are stored.",
+        back_to_products: "Back to Products",
+        arc_box1_label: "Project",
+        arc_box1_title: "In-progress Project",
+        arc_box1_desc: "Projects currently being worked on by the developer.",
+        arc_box2_label: "Project",
+        arc_box2_title: "Legacy Project",
+        arc_box2_desc: "Works that have ended service or are pre-update versions.",
+        arc_box3_label: "Document",
+        arc_box3_title: "Privacy Policy",
+        arc_box3_desc: "Privacy policy regarding personal information required by some programs.",
+        arc_box4_label: "Social",
+        arc_box4_title: "Related Links",
+        arc_box4_desc: "Social media links of the developer.",
+        header_ongoing: "Ongoing Projects",
+        header_legacy: "Legacy Projects",
+        header_privacy: "Privacy Policy",
+        header_social: "Social Links",
+        back_to_archive: "Back to Archive",
+        privacy_v1: "Privacy Policy (AI Nutritionist)",
+        back_to_privacy: "Back to Policy List"
     },
     es: {
         nav_home: "Inicio",
@@ -102,7 +148,30 @@ const translations = {
         prod_app_desc: "Una aplicación con una interfaz intuitiva para maximizar la productividad del usuario.",
         prod_game_label: "JUEGO",
         prod_game_title: "Neo Runner",
-        prod_game_desc: "Un juego de estilo cyberpunk con efectos llamativos y una jugabilidad emocionante."
+        prod_game_desc: "Un juego de estilo cyberpunk con efectos llamativos y una jugabilidad emocionante.",
+        archive_btn: "Ver Archivo",
+        archive_header: "Archivo de Proyectos",
+        archive_desc: "Este es un archivo donde se almacenan otros documentos importantes.",
+        back_to_products: "Volver a Productos",
+        arc_box1_label: "Proyecto",
+        arc_box1_title: "Proyecto en curso",
+        arc_box1_desc: "Proyectos en los que el desarrollador está trabajando actualmente.",
+        arc_box2_label: "Proyecto",
+        arc_box2_title: "Proyecto antiguo",
+        arc_box2_desc: "Obras que han finalizado su servicio o son versiones anteriores a las actualizaciones.",
+        arc_box3_label: "Documento",
+        arc_box3_title: "Política de privacidad",
+        arc_box3_desc: "Política de tratamiento de la información personal requerida por algunos programas.",
+        arc_box4_label: "Social",
+        arc_box4_title: "Enlaces relacionados",
+        arc_box4_desc: "Enlaces a las redes sociales del desarrollador.",
+        header_ongoing: "Proyectos en curso",
+        header_legacy: "Proyectos antiguos",
+        header_privacy: "Política de privacidad",
+        header_social: "Enlaces sociales",
+        back_to_archive: "Volver al archivo",
+        privacy_v1: "Política de privacidad (Nutricionista con IA)",
+        back_to_privacy: "Volver a la lista"
     },
     zh: {
         nav_home: "首页",
@@ -137,7 +206,30 @@ const translations = {
         prod_app_desc: "具有直截了当界面的应用，可最大限度地提高用户生产力。",
         prod_game_label: "游戏",
         prod_game_title: "Neo Runner",
-        prod_game_desc: "一款具有华丽效果和惊险玩法的赛博朋克风格游戏。"
+        prod_game_desc: "一款具有华丽效果和惊险玩法的赛博朋克风格游戏。",
+        archive_btn: "查看存档",
+        archive_header: "项目存档",
+        archive_desc: "这是存放其他重要文件的存档。",
+        back_to_products: "回到产品列表",
+        arc_box1_label: "项目",
+        arc_box1_title: "进行中的项目",
+        arc_box1_desc: "开发者目前正在进行中的项目。",
+        arc_box2_label: "项目",
+        arc_box2_title: "旧版本项目",
+        arc_box2_desc: "已停止服务或更新前的作品。",
+        arc_box3_label: "文档",
+        arc_box3_title: "隐私政策",
+        arc_box3_desc: "部分程序所需的个人信息处理政策。",
+        arc_box4_label: "社交",
+        arc_box4_title: "相关链接",
+        arc_box4_desc: "开发者的社交媒体链接。",
+        header_ongoing: "进行中的项目",
+        header_legacy: "旧版本项目",
+        header_privacy: "隐私政策",
+        header_social: "社交链接",
+        back_to_archive: "回到存档",
+        privacy_v1: "隐私政策 (AI 营养师)",
+        back_to_privacy: "返回列表"
     },
     ja: {
         nav_home: "ホーム",
@@ -172,7 +264,30 @@ const translations = {
         prod_app_desc: "ユーザーの生産性を最大化する直感的なインターフェースのアプリです。",
         prod_game_label: "ゲーム",
         prod_game_title: "Neo Runner",
-        prod_game_desc: "派手なエフェクトとスリリングなゲームプレイが特徴のサイバーパンクスタイルのゲームです。"
+        prod_game_desc: "派手なエフェクトとスリリングなゲームプレイが特徴のサイバーパンクスタイルのゲームです。",
+        archive_btn: "アーカイブを見る",
+        archive_header: "プロジェクトアーカイブ",
+        archive_desc: "他の重要な文書が保管されているアーカイブです。",
+        back_to_products: "製品一覧に戻る",
+        arc_box1_label: "プロジェクト",
+        arc_box1_title: "制作中のプロジェクト",
+        arc_box1_desc: "開発者が現在作業進行中のプロジェクトです。",
+        arc_box2_label: "プロジェクト",
+        arc_box2_title: "旧バージョンプロジェクト",
+        arc_box2_desc: "サービスを終了したか、アップデートされる前の作品です。",
+        arc_box3_label: "文書",
+        arc_box3_title: "個人情報処理方針",
+        arc_box3_desc: "一部のプログラムで要求される個人情報の取り扱いに関する方針です。",
+        arc_box4_label: "ソーシャル",
+        arc_box4_title: "関連リンク",
+        arc_box4_desc: "開発者のSNSリンクです。",
+        header_ongoing: "制作中のプロジェクト",
+        header_legacy: "旧バージョンプロジェクト",
+        header_privacy: "個人情報処理方針",
+        header_social: "関連リンク",
+        back_to_archive: "アーカイブに戻る",
+        privacy_v1: "個人情報処理方針 (AI栄養士)",
+        back_to_privacy: "リストに戻る"
     }
 };
 
@@ -290,4 +405,50 @@ document.addEventListener('DOMContentLoaded', () => {
         card.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
         observer.observe(card);
     });
+
+    // --- Mobile Menu Toggle ---
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinksContainer = document.getElementById('navLinks');
+
+    if (menuToggle && navLinksContainer) {
+        menuToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isActive = navLinksContainer.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+
+            // Prevent scrolling when menu is open
+            if (isActive) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                // Restore scroll based on page state (lock-scroll might still be active on homepage)
+                if (!document.body.classList.contains('lock-scroll')) {
+                    document.body.style.overflow = '';
+                }
+            }
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navLinksContainer.contains(e.target) && !menuToggle.contains(e.target)) {
+                if (navLinksContainer.classList.contains('active')) {
+                    navLinksContainer.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                    if (!document.body.classList.contains('lock-scroll')) {
+                        document.body.style.overflow = '';
+                    }
+                }
+            }
+        });
+
+        // Close menu when clicking a link
+        navLinksContainer.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinksContainer.classList.remove('active');
+                menuToggle.classList.remove('active');
+                if (!document.body.classList.contains('lock-scroll')) {
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+    }
 });
