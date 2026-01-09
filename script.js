@@ -210,21 +210,32 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Dynamic Scroll Lock (Homepage only) ---
+    // --- Dynamic Scroll Lock & Auto-Snap (Homepage only) ---
     const homeHero = document.getElementById('hero');
     const homeIntro = document.getElementById('intro');
 
     if (homeHero && homeIntro) {
+        let lastScrollY = window.scrollY;
+
         const updateScrollLock = () => {
             const scrollPos = window.scrollY;
             const heroHeight = homeHero.offsetHeight;
+            const isScrollingUp = scrollPos < lastScrollY;
 
             // If we are at the very top (Hero section)
-            if (scrollPos < heroHeight * 0.5) {
+            if (scrollPos < 50) {
                 document.body.classList.add('lock-scroll');
-            } else {
+            }
+            // Auto-snap back to hero if scrolling up and approaching it
+            else if (isScrollingUp && scrollPos < 200) {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                document.body.classList.add('lock-scroll');
+            }
+            else if (scrollPos > heroHeight * 0.5) {
                 document.body.classList.remove('lock-scroll');
             }
+
+            lastScrollY = scrollPos;
         };
 
         // Initial check
@@ -234,6 +245,8 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('a[href*="#intro"]').forEach(link => {
             link.addEventListener('click', () => {
                 document.body.classList.remove('lock-scroll');
+                // We update lastScrollY to prevent immediate snap-back if user was near top
+                setTimeout(() => { lastScrollY = window.scrollY; }, 100);
             });
         });
 
