@@ -1,5 +1,6 @@
 const translations = {
     ko: {
+        nav_home: "홈",
         nav_intro: "소개",
         nav_products: "제품",
         nav_contact: "문의",
@@ -34,6 +35,7 @@ const translations = {
         prod_game_desc: "화려한 이펙트와 긴장감 넘치는 사이버펑크 스타일의 게임입니다."
     },
     en: {
+        nav_home: "Home",
         nav_intro: "Intro",
         nav_products: "Products",
         nav_contact: "Contact",
@@ -68,6 +70,7 @@ const translations = {
         prod_game_desc: "A cyberpunk-style game with flashy effects and thrilling gameplay."
     },
     es: {
+        nav_home: "Inicio",
         nav_intro: "Introducción",
         nav_products: "Productos",
         nav_contact: "Contacto",
@@ -102,6 +105,7 @@ const translations = {
         prod_game_desc: "Un juego de estilo cyberpunk con efectos llamativos y una jugabilidad emocionante."
     },
     zh: {
+        nav_home: "首页",
         nav_intro: "介绍",
         nav_products: "产品",
         nav_contact: "联系我们",
@@ -136,6 +140,7 @@ const translations = {
         prod_game_desc: "一款具有华丽效果和惊险玩法的赛博朋克风格游戏。"
     },
     ja: {
+        nav_home: "ホーム",
         nav_intro: "紹介",
         nav_products: "製品",
         nav_contact: "お問い合わせ",
@@ -205,11 +210,50 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- Dynamic Scroll Lock (Homepage only) ---
+    const homeHero = document.getElementById('hero');
+    const homeIntro = document.getElementById('intro');
+
+    if (homeHero && homeIntro) {
+        const updateScrollLock = () => {
+            const scrollPos = window.scrollY;
+            const heroHeight = homeHero.offsetHeight;
+
+            // If we are at the very top (Hero section)
+            if (scrollPos < heroHeight * 0.5) {
+                document.body.classList.add('lock-scroll');
+            } else {
+                document.body.classList.remove('lock-scroll');
+            }
+        };
+
+        // Initial check
+        updateScrollLock();
+
+        // Listen for navigation clicks to unlock temporarily
+        document.querySelectorAll('a[href*="#intro"]').forEach(link => {
+            link.addEventListener('click', () => {
+                document.body.classList.remove('lock-scroll');
+            });
+        });
+
+        // Re-lock if jumping back to hero
+        document.querySelectorAll('a[href*="#hero"]').forEach(link => {
+            link.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                document.body.classList.add('lock-scroll');
+            });
+        });
+
+        window.addEventListener('scroll', updateScrollLock);
+    }
+
+    // --- Restore Language Dropdown & Animations ---
     document.querySelectorAll('.lang-dropdown button').forEach(btn => {
         btn.addEventListener('click', () => {
             const selectedLang = btn.getAttribute('data-lang');
             setLanguage(selectedLang);
-            langDropdown.classList.remove('show');
+            if (langDropdown) langDropdown.classList.remove('show');
         });
     });
 
@@ -217,7 +261,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (langDropdown) langDropdown.classList.remove('show');
     });
 
-    // Future expansion: Intersection Observer for animations
     const glassCards = document.querySelectorAll('.glass');
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {

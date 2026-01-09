@@ -16,7 +16,8 @@
     <nav>
         <a href="index.html" class="logo">POTATO BBACK'S STUDIO</a>
         <div class="nav-links">
-            <a href="index.html" class="active" data-i18n="nav_intro">소개</a>
+            <a href="index.html#hero" data-i18n="nav_home">홈</a>
+            <a href="index.html#intro" data-i18n="nav_intro">소개</a>
             <a href="products.html" data-i18n="nav_products">제품</a>
             <a href="contact.html" data-i18n="nav_contact">문의</a>
             <div class="lang-selector">
@@ -42,21 +43,25 @@
     </nav>
 
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="spline-container">
-                <iframe src='https://my.spline.design/r4xbot-Gv50A8wMtG4jIONJj4Dzad73/' frameborder='0' width='100%'
-                    height='100%'></iframe>
-            </div>
-            <div class="hero-content">
-                <h1 data-i18n="hero_title">Create Beyond<br>Limits.</h1>
-                <p data-i18n="hero_desc">우리는 웹, 앱, 게임을 통해 일상의 한계를 넘어서는 새로운 가치를 창출합니다.</p>
-                <div class="cta-btns">
-                    <a href="products.html" class="btn btn-primary" data-i18n="hero_btn">제품 보기</a>
-                </div>
+                <iframe src='https://my.spline.design/immersive3dparallaxscene-LGpUl6OorJc6KIgJIeXiPV3Y/'
+                    frameborder='0' width='100%' height='100%'></iframe>
             </div>
         </section>
 
         <section id="intro">
+            <div class="hero-content" style="margin-bottom: 6rem; pointer-events: all; padding: 0;">
+                <h1 data-i18n="hero_title"
+                    style="font-size: clamp(2.5rem, 8vw, 5rem); margin-bottom: 1.5rem; font-weight: 900; letter-spacing: -2px;">
+                    Create Beyond<br>Limits.</h1>
+                <p data-i18n="hero_desc"
+                    style="font-size: 1.25rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto 2rem;">우리는
+                    웹, 앱, 게임을 통해 일상의 한계를 넘어서는 새로운 가치를 창출합니다.</p>
+                <div class="cta-btns">
+                    <a href="products.html" class="btn btn-primary" data-i18n="hero_btn">제품 보기</a>
+                </div>
+            </div>
             <h2 class="section-title" data-i18n="intro_title">What We Do</h2>
             <div class="grid">
                 <div class="glass" style="padding: 2.5rem;">
