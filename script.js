@@ -71,7 +71,8 @@ const translations = {
         prod_game_card_title: "베타 테스트 준비 중",
         prod_game_card_desc: "더욱 몰입감 넘치는 게임 경험을 위해 밸런스 조정 및 버그 수정 작업을 진행하고 있습니다.",
         back_to_app_list: "앱 목록으로 돌아가기",
-        email_copied: "이메일 주소가 복사되었습니다!"
+        email_copied: "이메일 주소가 복사되었습니다!",
+        privacy_v2: "개인정보 처리방침 (Storyteller - The Bard)"
     },
     en: {
         nav_home: "Home",
@@ -145,7 +146,8 @@ const translations = {
         prod_game_card_title: "Beta Test Preparation",
         prod_game_card_desc: "We are working on balance adjustments and bug fixes for a more immersive gaming experience.",
         back_to_app_list: "Back to App List",
-        email_copied: "Email address copied!"
+        email_copied: "Email address copied!",
+        privacy_v2: "Privacy Policy (Storyteller - The Bard)"
     },
     es: {
         nav_home: "Inicio",
@@ -219,7 +221,8 @@ const translations = {
         prod_game_card_title: "Preparación de la prueba beta",
         prod_game_card_desc: "Estamos trabajando en ajustes de equilibrio y corrección de errores para una experiencia de juego más inmersiva.",
         back_to_app_list: "Volver a la lista de aplicaciones",
-        email_copied: "¡Dirección de correo copiada!"
+        email_copied: "¡Dirección de correo copiada!",
+        privacy_v2: "Política de privacidad (Storyteller - The Bard)"
     },
     zh: {
         nav_home: "首页",
@@ -293,7 +296,8 @@ const translations = {
         prod_game_card_title: "贝塔测试准备中",
         prod_game_card_desc: "我们正在进行平衡调整和错误修复，以提供更具沉浸感的游玩体验。",
         back_to_app_list: "回到应用列表",
-        email_copied: "电子邮箱地址已复制！"
+        email_copied: "电子邮箱地址已复制！",
+        privacy_v2: "隐私政策 (Storyteller - The Bard)"
     },
     ja: {
         nav_home: "ホーム",
@@ -367,7 +371,8 @@ const translations = {
         prod_game_card_title: "ベータテスト準備中",
         prod_game_card_desc: "より没入感のあるゲーム体験のため、バランス調整とバグ修正を行っています。",
         back_to_app_list: "アプリ一覧に戻る",
-        email_copied: "メールアドレスがコピーされました！"
+        email_copied: "メールアドレス가 복사되었습니다！",
+        privacy_v2: "個人情報処理方針 (Storyteller - The Bard)"
     }
 };
 
