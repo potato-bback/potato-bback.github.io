@@ -482,7 +482,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 entry.target.style.transform = 'translateY(0)';
             }
         });
-    }, { threshold: 0.1 });
+    }, { threshold: 0 });
 
     glassCards.forEach(card => {
         card.style.opacity = '0';
