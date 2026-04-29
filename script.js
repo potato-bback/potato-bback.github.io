@@ -74,7 +74,7 @@ const translations = {
         email_copied: "이메일 주소가 복사되었습니다!",
         privacy_v2: "개인정보 처리방침 (Storyteller - The Bard)",
         privacy_v3: "개인정보 처리방침 (LuckGames)",
-        privacy_v4: "개인정보 처리방침 (AI Butler)"
+        privacy_v4: "개인정보 처리방침 (꼬마 고양이)"
     },
     en: {
         nav_home: "Home",
@@ -151,7 +151,7 @@ const translations = {
         email_copied: "Email address copied!",
         privacy_v2: "Privacy Policy (Storyteller - The Bard)",
         privacy_v3: "Privacy Policy (LuckGames)",
-        privacy_v4: "Privacy Policy (AI Butler)"
+        privacy_v4: "Privacy Policy (Little Cat)"
     },
     es: {
         nav_home: "Inicio",
@@ -228,7 +228,7 @@ const translations = {
         email_copied: "¡Dirección de correo copiada!",
         privacy_v2: "Política de Privacidad (Storyteller - The Bard)",
         privacy_v3: "Política de Privacidad (LuckGames)",
-        privacy_v4: "Política de Privacidad (AI Butler)"
+        privacy_v4: "Política de Privacidad (Gato Pequeño)"
     },
     zh: {
         nav_home: "首页",
@@ -305,7 +305,7 @@ const translations = {
         email_copied: "电子邮箱地址已复制！",
         privacy_v2: "隐私政策 (Storyteller - The Bard)",
         privacy_v3: "隐私政策 (LuckGames)",
-        privacy_v4: "隐私政策 (AI Butler)"
+        privacy_v4: "隐私政策 (小猫)"
     },
     ja: {
         nav_home: "ホーム",
@@ -382,7 +382,7 @@ const translations = {
         email_copied: "メールアドレス가 복사되었습니다！",
         privacy_v2: "個人情報処理方針 (Storyteller - The Bard)",
         privacy_v3: "個人情報処理方針 (LuckGames)",
-        privacy_v4: "個人情報処理方針 (AI Butler)"
+        privacy_v4: "個人情報処理方針 (子猫)"
     }
 };
 
