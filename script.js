@@ -68,13 +68,33 @@ const translations = {
         prod_web_card_desc: "이 웹 서비스는 현재 최종 안정성 테스트 단계에 있습니다. 곧 정식 서비스로 인사드리겠습니다.",
         prod_app_card_title: "AI 영양사",
         prod_app_card_desc: "AI로 식단을 분석하세요! 사진 한장으로 스마트한 영양 관리의 시작.",
-        prod_game_card_title: "베타 테스트 준비 중",
-        prod_game_card_desc: "더욱 몰입감 넘치는 게임 경험을 위해 밸런스 조정 및 버그 수정 작업을 진행하고 있습니다.",
+        prod_game_card_title: "꼬마 고양이 (Tiny Cat)",
+        prod_game_card_desc: "작고 여린 아기 고양이 꼬마가 세상과 다시 마음을 열어가는 따뜻한 힐링 어드벤처 RPG입니다.",
         back_to_app_list: "앱 목록으로 돌아가기",
         email_copied: "이메일 주소가 복사되었습니다!",
         privacy_v2: "개인정보 처리방침 (Storyteller - The Bard)",
         privacy_v3: "개인정보 처리방침 (LuckGames)",
-        privacy_v4: "개인정보 처리방침 (꼬마 고양이)"
+        privacy_v4: "개인정보 처리방침 (꼬마 고양이)",
+        header_game_tiny_cat: "꼬마 고양이 (Tiny Cat)",
+        prod_game_tiny_cat_desc: "신비로운 세계를 탐험하는 꼬마 고양이의 모험 이야기를 담은 힐링 어드벤처 게임입니다. 현재 베타 테스트를 준비 중이며, 곧 더 자세한 소식으로 찾아뵙겠습니다.",
+        back_to_game_list: "게임 목록으로 돌아가기",
+        tiny_cat_sub_title: "작고 여린 아기 고양이 꼬마가 세상과 다시 마음을 열어가는 따뜻한 여정.",
+        tiny_cat_long_desc: "꼬마 고양이(Tiny Cat)는 감성적인 스토리와 성장 시스템이 어우러진 2D 탑다운 스토리 어드벤처 RPG입니다. 버려진 상처를 가진 꼬마는 어느 날, 따뜻한 마음의 쥐 래칫을 만나 새로운 삶을 시작하게 됩니다. 하지만 쉽게 마음을 열지 못하는 꼬마는 낮 동안 마을 곳곳을 돌아다니며 동물 친구들을 돕고, 조금씩 자신과 세상을 믿는 법을 배워갑니다.",
+        tiny_cat_feature_title: "Game Features",
+        tiny_cat_feature_1_title: "감동적인 힐링 스토리",
+        tiny_cat_feature_1_desc: "버려진 기억과 외로움을 품은 꼬마가 타인을 돕고 친구들과 유대감을 쌓으며 스스로를 치유해 나가는 이야기.",
+        tiny_cat_feature_2_title: "개성 넘치는 세계관",
+        tiny_cat_feature_2_desc: "챕터 1의 배경 크랙 타운은 하수구 위에 세워진 독특한 동물 마을입니다. 각자의 일터와 사연을 가진 동물 주민들, 그리고 지하를 지배하는 세 개의 조직까지—탐험할수록 새로운 이야기가 펼쳐집니다.",
+        tiny_cat_feature_3_title: "깊이 있는 퀘스트 시스템",
+        tiny_cat_feature_3_desc: "메인 퀘스트를 따라 엔딩을 향해 나아가거나, 서브 퀘스트를 통해 동물 친구들의 숨겨진 사연을 만나보세요.",
+        tiny_cat_feature_4_title: "성장하는 꼬마",
+        tiny_cat_feature_4_desc: "퀘스트와 미니게임을 통해 꼬마의 능력을 키워보세요. (체력, 속도, 점프력, 동체 시력, 발성 능력)",
+        tiny_cat_feature_5_title: "전략적인 행동력 시스템",
+        tiny_cat_feature_5_desc: "하루에는 한계가 있습니다. 매일의 선택이 모험의 방향을 결정합니다.",
+        tiny_cat_recommend_title: "이런 분께 추천합니다",
+        tiny_cat_platform: "iOS / Android 출시 예정",
+        tiny_cat_footer_cta: "꼬마와 함께 새로운 하루를 시작하세요",
+        tiny_cat_footer_desc: "누군가를 돕는 일이, 결국 자신을 구하는 일이 될 수도 있습니다. 작고 소중한 고양이 꼬마와 함께 웃음과 감동이 가득한 모험을 떠나보세요."
     },
     en: {
         nav_home: "Home",
@@ -145,13 +165,33 @@ const translations = {
         prod_web_card_desc: "This web service is currently in the final stability testing phase. We will be back with the official service soon.",
         prod_app_card_title: "AI Nutritionist",
         prod_app_card_desc: "Analyze your diet with AI! Start smart nutrition management with just one photo.",
-        prod_game_card_title: "Beta Test Preparation",
-        prod_game_card_desc: "We are working on balance adjustments and bug fixes for a more immersive gaming experience.",
+        prod_game_card_title: "Tiny Cat",
+        prod_game_card_desc: "A warm healing adventure RPG about a small and fragile kitten, Tiny, opening her heart to the world again.",
         back_to_app_list: "Back to App List",
         email_copied: "Email address copied!",
         privacy_v2: "Privacy Policy (Storyteller - The Bard)",
         privacy_v3: "Privacy Policy (LuckGames)",
-        privacy_v4: "Privacy Policy (Little Cat)"
+        privacy_v4: "Privacy Policy (Little Cat)",
+        header_game_tiny_cat: "Tiny Cat",
+        prod_game_tiny_cat_desc: "A healing adventure game about the journey of a little cat exploring a mysterious world. We are preparing for beta testing and will be back with more news soon.",
+        back_to_game_list: "Back to Game List",
+        tiny_cat_sub_title: "A warm journey where Tiny, a small and fragile kitten, opens her heart to the world again.",
+        tiny_cat_long_desc: "Tiny Cat is a 2D top-down story adventure RPG that combines emotional storytelling with a growth system. Tiny, who has wounds from being abandoned, meets a warm-hearted mouse named Ratchet and starts a new life. However, Tiny, who cannot easily open her heart, travels around the village during the day to help animal friends and gradually learns how to trust herself and the world.",
+        tiny_cat_feature_title: "Game Features",
+        tiny_cat_feature_1_title: "Heartwarming Healing Story",
+        tiny_cat_feature_1_desc: "A story about Tiny, who carries abandoned memories and loneliness, healing herself by helping others and building bonds with friends.",
+        tiny_cat_feature_2_title: "Unique Worldview",
+        tiny_cat_feature_2_desc: "Crack Town, the setting of Chapter 1, is a unique animal village built over a sewer. From animal residents with their own jobs and stories to the three organizations that rule the underground—new stories unfold as you explore.",
+        tiny_cat_feature_3_title: "Deep Quest System",
+        tiny_cat_feature_3_desc: "Follow the main quest towards the ending, or discover the hidden stories of animal friends through side quests.",
+        tiny_cat_feature_4_title: "Growing Tiny",
+        tiny_cat_feature_4_desc: "Enhance Tiny's abilities through quests and minigames. (HP, Speed, Jump, Visual Acuity, Vocal Ability)",
+        tiny_cat_feature_5_title: "Strategic Action Point System",
+        tiny_cat_feature_5_desc: "Each day has limits. Your daily choices determine the direction of the adventure.",
+        tiny_cat_recommend_title: "Recommended for",
+        tiny_cat_platform: "iOS / Android Coming Soon",
+        tiny_cat_footer_cta: "Start a new day with Tiny",
+        tiny_cat_footer_desc: "Helping someone can eventually be about saving yourself. Embark on an adventure full of laughter and emotion with the small and precious cat, Tiny."
     },
     es: {
         nav_home: "Inicio",
@@ -228,7 +268,10 @@ const translations = {
         email_copied: "¡Dirección de correo copiada!",
         privacy_v2: "Política de Privacidad (Storyteller - The Bard)",
         privacy_v3: "Política de Privacidad (LuckGames)",
-        privacy_v4: "Política de Privacidad (Gato Pequeño)"
+        privacy_v4: "Política de Privacidad (Gato Pequeño)",
+        header_game_tiny_cat: "Gato Pequeño (Tiny Cat)",
+        prod_game_tiny_cat_desc: "Un juego de aventuras y curación sobre el viaje de un gato pequeño que explora un mundo misterioso. Nos estamos preparando para la prueba beta y volveremos pronto con más noticias.",
+        back_to_game_list: "Volver a la lista de juegos"
     },
     zh: {
         nav_home: "首页",
@@ -305,7 +348,10 @@ const translations = {
         email_copied: "电子邮箱地址已复制！",
         privacy_v2: "隐私政策 (Storyteller - The Bard)",
         privacy_v3: "隐私政策 (LuckGames)",
-        privacy_v4: "隐私政策 (小猫)"
+        privacy_v4: "隐私政策 (小猫)",
+        header_game_tiny_cat: "小猫 (Tiny Cat)",
+        prod_game_tiny_cat_desc: "一款关于小猫探索神秘世界之旅的治愈系冒险游戏。我们正在准备贝塔测试，很快会带来更多消息。",
+        back_to_game_list: "回到游戏列表"
     },
     ja: {
         nav_home: "ホーム",
@@ -382,7 +428,10 @@ const translations = {
         email_copied: "メールアドレス가 복사되었습니다！",
         privacy_v2: "個人情報処理方針 (Storyteller - The Bard)",
         privacy_v3: "個人情報処理方針 (LuckGames)",
-        privacy_v4: "個人情報処理方針 (子猫)"
+        privacy_v4: "個人情報処理方針 (子猫)",
+        header_game_tiny_cat: "子猫 (Tiny Cat)",
+        prod_game_tiny_cat_desc: "神秘的な世界を探索する子猫の冒険を描いたヒーリングアドベンチャーゲームです。現在ベータテストの準備中であり、まもなく詳細なニュースをお届けします。",
+        back_to_game_list: "ゲーム一覧に戻る"
     }
 };
 

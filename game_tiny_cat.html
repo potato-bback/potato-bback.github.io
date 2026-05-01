@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Cat | potato bback's studio</title>
+    <meta name="description" content="신비로운 세계를 탐험하는 꼬마 고양이의 모험, Tiny Cat을 소개합니다.">
+    <link rel="canonical" href="https://potato-bback.github.io/game_tiny_cat.html">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://potato-bback.github.io/game_tiny_cat.html">
+    <meta property="og:title" content="Tiny Cat | potato bback's studio">
+    <meta property="og:description" content="꼬마 고양이와 함께하는 신비로운 모험! 힐링 어드벤처 RPG Tiny Cat.">
+    <meta property="og:image" content="https://potato-bback.github.io/assets/game_tiny_cat_banner.png">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        .game-hero {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .game-hero img {
+            width: 100%;
+            display: block;
+        }
+        .content-section {
+            max-width: 900px;
+            margin: 4rem auto;
+            text-align: left;
+            padding: 0 5%;
+        }
+        .story-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 3rem;
+            border-radius: 20px;
+            margin-bottom: 4rem;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .feature-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 15px;
+            transition: var(--transition);
+        }
+        .feature-card:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: var(--accent-blue);
+            transform: translateY(-5px);
+        }
+        .feature-card h3 {
+            margin-bottom: 1rem;
+            color: var(--accent-blue);
+        }
+        .list-item {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .list-item::before {
+            content: "🐱";
+        }
+        .footer-image-container {
+            max-width: 600px;
+            margin: 5rem auto;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .footer-image-container img {
+            width: 100%;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo">POTATO BBACK'S STUDIO</a>
+        <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html#hero" data-i18n="nav_home">홈</a>
+            <a href="index.html#intro" data-i18n="nav_intro">소개</a>
+            <a href="products.html" data-i18n="nav_products">제품</a>
+            <a href="contact.html" data-i18n="nav_contact">문의</a>
+            <div class="lang-selector">
+                <button class="lang-btn" id="langBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                        </path>
+                    </svg>
+                </button>
+                <div class="lang-dropdown glass" id="langDropdown">
+                    <button data-lang="ko">한국어 (KO)</button>
+                    <button data-lang="en">English (EN)</button>
+                    <button data-lang="es">Español (ES)</button>
+                    <button data-lang="zh">中文 (ZH)</button>
+                    <button data-lang="ja">日本語 (JA)</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section style="padding-top: 10rem; min-height: 80vh; text-align: center;">
+            <h1 class="section-title" data-i18n="header_game_tiny_cat">꼬마 고양이 (Tiny Cat)</h1>
+            
+            <p style="color: var(--text-secondary); margin-bottom: 3rem; font-size: 1.2rem; max-width: 700px; margin-left: auto; margin-right: auto;" data-i18n="tiny_cat_sub_title">
+                작고 여린 아기 고양이 꼬마가 세상과 다시 마음을 열어가는 따뜻한 여정.
+            </p>
+
+            <div class="game-hero">
+                <img src="assets/game_tiny_cat_banner.png" alt="Tiny Cat Main Banner">
+            </div>
+
+            <div class="content-section">
+                <div class="story-box">
+                    <p style="line-height: 2; color: var(--text-primary); font-size: 1.1rem;" data-i18n="tiny_cat_long_desc">
+                        꼬마 고양이(Tiny Cat)는 감성적인 스토리와 성장 시스템이 어우러진 2D 탑다운 스토리 어드벤처 RPG입니다. 버려진 상처를 가진 꼬마는 어느 날, 따뜻한 마음의 쥐 래칫을 만나 새로운 삶을 시작하게 됩니다. 하지만 쉽게 마음을 열지 못하는 꼬마는 낮 동안 마을 곳곳을 돌아다니며 동물 친구들을 돕고, 조금씩 자신과 세상을 믿는 법을 배워갑니다.
+                    </p>
+                </div>
+
+                <h2 style="margin-top: 6rem; text-align: center; font-size: 2.5rem;" data-i18n="tiny_cat_feature_title">🌟 게임 특징</h2>
+                
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3 data-i18n="tiny_cat_feature_1_title">🐾 감동적인 힐링 스토리</h3>
+                        <p data-i18n="tiny_cat_feature_1_desc">버려진 기억과 외로움을 품은 꼬마가 타인을 돕고 친구들과 유대감을 쌓으며 스스로를 치유해 나가는 이야기.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3 data-i18n="tiny_cat_feature_2_title">🏘️ 개성 넘치는 세계관</h3>
+                        <p data-i18n="tiny_cat_feature_2_desc">챕터 1의 배경 크랙 타운은 하수구 위에 세워진 독특한 동물 마을입니다. 각자의 일터와 사연을 가진 동물 주민들, 그리고 지하를 지배하는 세 개의 조직까지—탐험할수록 새로운 이야기가 펼쳐집니다.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3 data-i18n="tiny_cat_feature_3_title">📖 깊이 있는 퀘스트 시스템</h3>
+                        <p data-i18n="tiny_cat_feature_3_desc">메인 퀘스트를 따라 엔딩을 향해 나아가거나, 서브 퀘스트를 통해 동물 친구들의 숨겨진 사연을 만나보세요.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3 data-i18n="tiny_cat_feature_4_title">📈 성장하는 꼬마</h3>
+                        <p data-i18n="tiny_cat_feature_4_desc">퀘스트와 미니게임을 통해 꼬마의 능력을 키워보세요. (체력, 속도, 점프력, 동체 시력, 발성 능력)</p>
+                    </div>
+                    <div class="feature-card" style="grid-column: 1 / -1;">
+                        <h3 data-i18n="tiny_cat_feature_5_title">⚡ 전략적인 행동력 시스템</h3>
+                        <p data-i18n="tiny_cat_feature_5_desc">하루에는 한계가 있습니다. 퀘스트를 먼저 할지, 미니게임으로 성장할지, 아이템으로 회복할지—매일의 선택이 모험의 방향을 결정합니다.</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 8rem;">
+                    <h2 style="margin-bottom: 2rem;" data-i18n="tiny_cat_recommend_title">💛 이런 분께 추천합니다</h2>
+                    <div class="list-item">따뜻하고 감동적인 이야기를 좋아하는 분</div>
+                    <div class="list-item">귀여운 동물 캐릭터와 세계관을 좋아하는 분</div>
+                    <div class="list-item">성장형 RPG 시스템을 즐기는 분</div>
+                    <div class="list-item">천천히 힐링하며 플레이할 게임을 찾는 분</div>
+                </div>
+
+                <div style="margin-top: 5rem; text-align: center; padding: 3rem; background: rgba(0, 210, 255, 0.05); border-radius: 20px;">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">📱 플랫폼</h3>
+                    <p style="font-size: 1.25rem; font-weight: 700; color: var(--accent-blue);" data-i18n="tiny_cat_platform">iOS / Android 출시 예정</p>
+                </div>
+            </div>
+
+            <div class="footer-image-container">
+                <img src="assets/game_tiny_cat_footer.png" alt="Tiny Cat Footer Image">
+            </div>
+
+            <div style="max-width: 700px; margin: 0 auto 5rem;">
+                <h2 style="margin-bottom: 1.5rem;" data-i18n="tiny_cat_footer_cta">🐱 꼬마와 함께 새로운 하루를 시작하세요</h2>
+                <p style="color: var(--text-secondary); line-height: 1.8;" data-i18n="tiny_cat_footer_desc">
+                    누군가를 돕는 일이, 결국 자신을 구하는 일이 될 수도 있습니다. 작고 소중한 고양이 꼬마와 함께 웃음과 감동이 가득한 모험을 떠나보세요.
+                </p>
+            </div>
+
+            <div style="margin-bottom: 10rem;">
+                <a href="prod_game.html" class="btn btn-primary" data-i18n="back_to_game_list">게임 목록으로 돌아가기</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 potato bback's studio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
