@@ -40,4 +40,8 @@
     <loc>https://potato-bback.github.io/privacy.html</loc>
     <priority>0.4</priority>
   </url>
+  <url>
+    <loc>https://potato-bback.github.io/terms.html</loc>
+    <priority>0.4</priority>
+  </url>
 </urlset>
